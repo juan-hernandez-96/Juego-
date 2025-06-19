@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://yqwy00bfu6al"]
+[gd_scene load_steps=5 format=3 uid="uid://yqwy00bfu6al"]
 
+[ext_resource type="Script" uid="uid://cb16ehc6r6lrp" path="res://Juan Hernández/plataforma.gd" id="1_40ad4"]
 [ext_resource type="Texture2D" uid="uid://e7m5kasvn87p" path="res://Juan Hernández/Platform.png" id="1_bisx2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bisx2"]
@@ -9,6 +10,7 @@ size = Vector2(42, 16)
 size = Vector2(42, 12)
 
 [node name="Plataforma" type="Area2D"]
+script = ExtResource("1_40ad4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-4, 0)
