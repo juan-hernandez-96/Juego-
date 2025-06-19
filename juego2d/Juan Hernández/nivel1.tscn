@@ -1,7 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://bd7bvb2xyn3c3"]
+[gd_scene load_steps=4 format=3 uid="uid://bd7bvb2xyn3c3"]
+
+[ext_resource type="Texture2D" uid="uid://2skqo7so7mml" path="res://Juan Hernández/door2.png" id="1_7ylcw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgipw"]
 size = Vector2(973, 210)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_or0rq"]
+size = Vector2(34, 34)
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,5 +19,11 @@ shape = SubResource("RectangleShape2D_kgipw")
 [node name="Puerta" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta"]
+top_level = true
+position = Vector2(687, -17)
+shape = SubResource("RectangleShape2D_or0rq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Puerta"]
+position = Vector2(687, -17)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_7ylcw")
