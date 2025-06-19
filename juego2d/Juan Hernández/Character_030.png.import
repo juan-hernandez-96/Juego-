@@ -2,8 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:juego2d/Juan Hernández/Character_030.png.import
 uid="uid://cjnsvhenvp47e"
 path="res://.godot/imported/Character_030.png-287c56788fe8a73608eaab0907e55f11.ctex"
+=======
+uid="uid://2shw5bmb13dr"
+path="res://.godot/imported/Character_030.png-4beaf525250e73150c55c7bf6e2bb28a.ctex"
+>>>>>>> a3b1c04acf0ba4e7283c4905e84142695d1cb1fd:juego2d/Character_030.png.import
 metadata={
 "vram_texture": false
 }
