@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bd7bvb2xyn3c3"]
+[gd_scene load_steps=6 format=3 uid="uid://bd7bvb2xyn3c3"]
 
 [ext_resource type="Texture2D" uid="uid://2skqo7so7mml" path="res://Juan Hernández/door2.png" id="1_7ylcw"]
+[ext_resource type="PackedScene" uid="uid://yqwy00bfu6al" path="res://Juan Hernández/plataforma.tscn" id="2_ahnuy"]
+[ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Juan Hernández/personaje.tscn" id="3_clyua"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgipw"]
 size = Vector2(973, 210)
@@ -27,3 +29,24 @@ shape = SubResource("RectangleShape2D_or0rq")
 position = Vector2(687, -17)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_7ylcw")
+
+[node name="Plataforma" parent="." instance=ExtResource("2_ahnuy")]
+type = 1
+
+[node name="Plataforma2" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-118, 3)
+
+[node name="Plataforma3" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(393, 3)
+type = 4
+
+[node name="Plataforma4" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(279, 3)
+type = 3
+
+[node name="Plataforma5" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(160, 2)
+type = 2
+
+[node name="personaje" parent="." instance=ExtResource("3_clyua")]
+position = Vector2(5, -48)

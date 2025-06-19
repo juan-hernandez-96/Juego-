@@ -1,20 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://crenoqdghvttr"]
+[gd_scene load_steps=4 format=3 uid="uid://crenoqdghvttr"]
 
 [ext_resource type="Texture2D" uid="uid://c8w6nhv6a63sg" path="res://Juan Hernández/Character_030.png" id="1_4e5bt"]
+[ext_resource type="Script" uid="uid://cjob7krkpdlmy" path="res://Juan Hernández/personaje.gd" id="1_wtww3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ltgau"]
 radius = 14.0
 height = 42.0
 
 [node name="personaje" type="CharacterBody2D"]
+script = ExtResource("1_wtww3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 top_level = true
-position = Vector2(-11, 13)
+position = Vector2(-1, -4)
 shape = SubResource("CapsuleShape2D_ltgau")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-10, 13)
+position = Vector2(-1, -4)
 scale = Vector2(0.722222, 0.708333)
 texture = ExtResource("1_4e5bt")
 hframes = 4
@@ -22,3 +24,4 @@ vframes = 3
 frame = 3
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -7)
