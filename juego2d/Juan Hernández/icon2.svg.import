@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u50fdsthl0xn"
-path="res://.godot/imported/Platform.png-542605f8d0c23af6a571efe7214c2e6a.ctex"
+uid="uid://bs6f2dog0t3i"
+path="res://.godot/imported/icon2.svg-79b34df8dd984c6fe2fa40c9014b006c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Platform.png"
-dest_files=["res://.godot/imported/Platform.png-542605f8d0c23af6a571efe7214c2e6a.ctex"]
+source_file="res://Juan Hernández/icon2.svg"
+dest_files=["res://.godot/imported/icon2.svg-79b34df8dd984c6fe2fa40c9014b006c.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

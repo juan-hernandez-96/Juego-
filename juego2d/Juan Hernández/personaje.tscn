@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://crenoqdghvttr"]
 
-[ext_resource type="Texture2D" uid="uid://cjnsvhenvp47e" path="res://Character_030.png" id="1_4e5bt"]
+[ext_resource type="Texture2D" uid="uid://cjnsvhenvp47e" path="res://Juan Hernández/Character_030.png" id="1_4e5bt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ltgau"]
 radius = 20.0
