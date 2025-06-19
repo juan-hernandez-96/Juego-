@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjnuf244xo5jq"
-path="res://.godot/imported/Character_030.png-bd1e035f0b83c7c6eaef8977196ffeb2.ctex"
+uid="uid://2skqo7so7mml"
+path="res://.godot/imported/door2.png-d88c741234a50c0327479e3495b24691.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Leonardo/Character_030.png"
-dest_files=["res://.godot/imported/Character_030.png-bd1e035f0b83c7c6eaef8977196ffeb2.ctex"]
+source_file="res://Juan Hernández/door2.png"
+dest_files=["res://.godot/imported/door2.png-d88c741234a50c0327479e3495b24691.ctex"]
 
 [params]
 
