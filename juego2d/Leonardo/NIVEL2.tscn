@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bmt2lv577o0it"]
+[gd_scene load_steps=7 format=3 uid="uid://bmt2lv577o0it"]
 
+[ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
 [ext_resource type="PackedScene" uid="uid://b6e707k28mon7" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="PackedScene" uid="uid://dggqqhbf17mak" path="res://Leonardo/plataforma.tscn" id="2_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
@@ -11,6 +12,7 @@ size = Vector2(1159, 357)
 [node name="Node2D" type="Node2D"]
 
 [node name="zona de eliminacion" type="Area2D" parent="."]
+script = ExtResource("1_6bcpe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zona de eliminacion"]
 position = Vector2(574.5, 470.5)
@@ -43,3 +45,5 @@ type = 1
 
 [node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
 position = Vector2(647, -298)
+
+[connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
