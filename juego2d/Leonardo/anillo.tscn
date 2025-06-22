@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmbuk5ivywwie"]
+
+[ext_resource type="Texture2D" uid="uid://cec54fgdyjqhl" path="res://Leonardo/vintagesonic1-sonic-ring-gif-11562880671bobd49rxah (1).png" id="1_mx5co"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jre6i"]
+radius = 21.3776
+
+[node name="anillo" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 7)
+shape = SubResource("CircleShape2D_jre6i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 7)
+scale = Vector2(0.0309837, 0.0331597)
+texture = ExtResource("1_mx5co")
