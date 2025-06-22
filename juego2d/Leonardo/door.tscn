@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bglb2l5usasdg"]
 
-[ext_resource type="Texture2D" uid="uid://d340ob3mkaor7" path="res://Leonardo/puerta de fuego (1).png" id="1_ba8gm"]
+[ext_resource type="Texture2D" uid="uid://d340ob3mkaor7" path="res://Leonardo/puerta de fuego (1).png" id="1_27hau"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v6xrn"]
 size = Vector2(51, 49.5)
@@ -10,7 +10,7 @@ size = Vector2(51, 49.5)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(243.5, -69.25)
 scale = Vector2(0.159375, 0.148438)
-texture = ExtResource("1_ba8gm")
+texture = ExtResource("1_27hau")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(242.5, -68.75)
