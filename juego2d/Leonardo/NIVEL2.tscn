@@ -44,6 +44,15 @@ position = Vector2(822, -20)
 type = 1
 
 [node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(647, -298)
+position = Vector2(481, 38)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Marcador" type="Label" parent="HUD"]
+offset_left = 371.0
+offset_top = -160.0
+offset_right = 455.0
+offset_bottom = -137.0
+text = "\"Anillos: 0\""
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]

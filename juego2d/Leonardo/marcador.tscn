@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d0dl2w5ok7voa"]
+
+[node name="marcador" type="Node2D"]
+
+[node name="Marcador" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Marcador"
