@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b6e707k28mon7" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="PackedScene" uid="uid://dggqqhbf17mak" path="res://Leonardo/plataforma.tscn" id="2_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
-[ext_resource type="PackedScene" uid="uid://cmbuk5ivywwie" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
+[ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
 size = Vector2(1159, 357)
@@ -44,15 +44,12 @@ position = Vector2(822, -20)
 type = 1
 
 [node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(481, 38)
+position = Vector2(482, 15)
 
-[node name="HUD" type="CanvasLayer" parent="."]
+[node name="anillo2" parent="." instance=ExtResource("4_1iyf2")]
+position = Vector2(655, -160)
 
-[node name="Marcador" type="Label" parent="HUD"]
-offset_left = 371.0
-offset_top = -160.0
-offset_right = 455.0
-offset_bottom = -137.0
-text = "\"Anillos: 0\""
+[node name="anillo3" parent="." instance=ExtResource("4_1iyf2")]
+position = Vector2(912, -107)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
