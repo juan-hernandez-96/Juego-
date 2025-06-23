@@ -22,3 +22,23 @@ func _physics_process(delta):
 
 func _on_reset_area_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()
+
+
+func _on_plataforma_2_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_plataforma_3_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_plataforma_4_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_plataforma_5_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_plataforma_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

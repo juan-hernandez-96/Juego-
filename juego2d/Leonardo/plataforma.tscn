@@ -24,3 +24,5 @@ shape = SubResource("RectangleShape2D_35icv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("RectangleShape2D_5swv6")
 debug_color = Color(0.890196, 0.0862745, 0.329412, 0.419608)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

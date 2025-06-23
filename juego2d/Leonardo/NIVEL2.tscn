@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
-size = Vector2(1159, 357)
+size = Vector2(2007.5, 357)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_dkh2j")
@@ -17,39 +17,20 @@ script = ExtResource("1_dkh2j")
 script = ExtResource("1_6bcpe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zona de eliminacion"]
-position = Vector2(574.5, 470.5)
+position = Vector2(1012.25, 471)
 shape = SubResource("RectangleShape2D_1iyf2")
 
-[node name="plataforma" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(325, 2)
-
-[node name="plataforma2" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(485, 75)
-type = 4
-
-[node name="plataforma3" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(639, 35)
-type = 2
-
-[node name="plataforma4" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(652, -97)
-type = 3
-
-[node name="plataforma5" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(822, -20)
-type = 1
-
 [node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
-position = Vector2(329, -38)
+position = Vector2(330, -39)
 
 [node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(482, 15)
+position = Vector2(473, 54)
 
 [node name="anillo2" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(655, -160)
+position = Vector2(727, -9)
 
 [node name="anillo3" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(912, -107)
+position = Vector2(1083, -76)
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -58,6 +39,40 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="door" parent="." instance=ExtResource("3_vx6k7")]
-position = Vector2(574, -100)
+position = Vector2(1283, -311)
+
+[node name="anillo4" parent="." instance=ExtResource("4_1iyf2")]
+position = Vector2(1463, -139)
+
+[node name="anillo5" parent="." instance=ExtResource("4_1iyf2")]
+position = Vector2(1523, -488)
+
+[node name="plataforma" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(328, 3)
+
+[node name="plataforma2" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(469, 126)
+type = 4
+
+[node name="plataforma3" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(804, 69)
+type = 2
+
+[node name="plataforma4" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(1190, 15)
+type = 1
+
+[node name="plataforma5" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(1335, -212)
+type = 3
+
+[node name="plataforma6" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(618, 92)
+
+[node name="plataforma7" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(948, 43)
+
+[node name="plataforma8" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(1463, -20)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
