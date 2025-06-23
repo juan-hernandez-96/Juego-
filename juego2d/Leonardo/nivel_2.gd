@@ -1,4 +1,5 @@
 extends Node2D
+
 var contador_anillos = 0
 
 func sumar_anillo():

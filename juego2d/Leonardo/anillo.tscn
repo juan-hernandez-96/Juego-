@@ -10,6 +10,7 @@ func _ready():
 
 func _on_body_entered(body: Node) -> void:
 	print(\"Entró:\", body.name)
+	get_parent().sumar_anillo()
 	queue_free()
 "
 

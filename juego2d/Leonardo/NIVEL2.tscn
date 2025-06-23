@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bmt2lv577o0it"]
+[gd_scene load_steps=8 format=3 uid="uid://bmt2lv577o0it"]
 
 [ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
+[ext_resource type="Script" uid="uid://b0g4wp148bly3" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
 [ext_resource type="PackedScene" uid="uid://b6e707k28mon7" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="PackedScene" uid="uid://dggqqhbf17mak" path="res://Leonardo/plataforma.tscn" id="2_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
@@ -10,6 +11,7 @@
 size = Vector2(1159, 357)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_dkh2j")
 
 [node name="zona de eliminacion" type="Area2D" parent="."]
 script = ExtResource("1_6bcpe")
@@ -17,12 +19,6 @@ script = ExtResource("1_6bcpe")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zona de eliminacion"]
 position = Vector2(574.5, 470.5)
 shape = SubResource("RectangleShape2D_1iyf2")
-
-[node name="personaje" parent="zona de eliminacion/CollisionShape2D" instance=ExtResource("2_4u8h7")]
-position = Vector2(-245.5, -508.5)
-
-[node name="door" parent="." instance=ExtResource("3_vx6k7")]
-position = Vector2(574, -100)
 
 [node name="plataforma" parent="." instance=ExtResource("2_vx6k7")]
 position = Vector2(325, 2)
@@ -43,6 +39,9 @@ type = 3
 position = Vector2(822, -20)
 type = 1
 
+[node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
+position = Vector2(329, -38)
+
 [node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
 position = Vector2(482, 15)
 
@@ -51,5 +50,14 @@ position = Vector2(655, -160)
 
 [node name="anillo3" parent="." instance=ExtResource("4_1iyf2")]
 position = Vector2(912, -107)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Marcador" type="Label" parent="HUD"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="door" parent="." instance=ExtResource("3_vx6k7")]
+position = Vector2(574, -100)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
