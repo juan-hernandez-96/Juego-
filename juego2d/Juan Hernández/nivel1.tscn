@@ -5,51 +5,109 @@
 [ext_resource type="PackedScene" uid="uid://dtn7cukdryfn0" path="res://Juan Hernández/character.tscn" id="3_ahnuy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgipw"]
-size = Vector2(973, 210)
+size = Vector2(4848, 423)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_or0rq"]
-size = Vector2(34, 34)
+size = Vector2(34, 35)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="ZonaMuerte" type="Area2D" parent="."]
+position = Vector2(1, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMuerte"]
-position = Vector2(329.5, 256)
+position = Vector2(-1004, 576.5)
 shape = SubResource("RectangleShape2D_kgipw")
 
 [node name="Puerta" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta"]
 top_level = true
-position = Vector2(687, -17)
+position = Vector2(439, -6)
 shape = SubResource("RectangleShape2D_or0rq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Puerta"]
-position = Vector2(687, -17)
+position = Vector2(438, -7)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_7ylcw")
 
 [node name="Plataforma" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(-121, 0)
-type = 1
+position = Vector2(155, 3)
+type = 2
 
 [node name="Plataforma2" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(3, 2)
-
-[node name="Plataforma3" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(393, 3)
-type = 4
-
-[node name="Plataforma4" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(279, 3)
+position = Vector2(-778, -376)
 type = 3
 
+[node name="Plataforma3" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(239, 3)
+type = 2
+
+[node name="Plataforma4" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(113, 3)
+type = 2
+
 [node name="Plataforma5" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(160, 2)
+position = Vector2(71, 3)
 type = 2
 
 [node name="Character" parent="." instance=ExtResource("3_ahnuy")]
-position = Vector2(0, -24)
+position = Vector2(0, -21)
 
-[connection signal="body_entered" from="ZonaMuerte" to="Plataforma" method="_on_zona_muerte_body_entered"]
+[node name="Plataforma6" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(197, 3)
+type = 2
+
+[node name="Plataforma7" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(281, 3)
+type = 2
+
+[node name="Plataforma8" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-193, 1)
+type = 3
+
+[node name="Plataforma9" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-374, -109)
+type = 3
+
+[node name="Plataforma10" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-537, -223)
+type = 3
+
+[node name="Plataforma11" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(372, 4)
+type = 4
+
+[node name="Plataforma12" parent="." instance=ExtResource("2_ahnuy")]
+
+[node name="Plataforma13" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-581, -609)
+type = 2
+
+[node name="Plataforma14" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-504, -608)
+
+[node name="Plataforma15" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-1067, -537)
+type = 3
+
+[node name="Plataforma16" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-1438, -606)
+
+[connection signal="body_entered" from="ZonaMuerte" to="Character" method="_on_zona_muerte_body_entered"]
+[connection signal="body_entered" from="Plataforma" to="Plataforma" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma2" to="Plataforma2" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma3" to="Plataforma3" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma4" to="Plataforma4" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma5" to="Plataforma5" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma6" to="Plataforma6" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma7" to="Plataforma7" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma8" to="Plataforma8" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma9" to="Plataforma9" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma10" to="Plataforma10" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma11" to="Plataforma11" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma12" to="Plataforma12" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma13" to="Plataforma13" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma14" to="Plataforma14" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma15" to="Plataforma15" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma16" to="Plataforma16" method="_on_body_entered"]

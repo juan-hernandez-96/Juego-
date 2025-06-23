@@ -19,7 +19,5 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
-
-
-func _on_door_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://nivel1.tscn")
+func _on_zona_muerte_body_entered(body: Node2D) -> void:
+	get_tree().reload_current_scene()

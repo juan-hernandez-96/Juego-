@@ -30,7 +30,7 @@ func _on_body_entered(body: Node2D) -> void:
 		match type: 
 			
 			TipoPlataforma.FRAGIL:
-				await get_tree().create_timer(0.25).timeout
+				await get_tree().create_timer(0.05).timeout
 				queue_free()
 			TipoPlataforma.REBOTE:
 				if body.has_method("puede_rebotar"):
@@ -50,7 +50,3 @@ func oscilar():
 	tween.tween_property(self,"position:x",position.x - 80,2)
 	tween.tween_property(self,"position:y",position.y + 100,2)
 	tween.set_loops() 
-
-
-func _on_zona_muerte_body_entered(body: Node2D) -> void:
-	get_tree().reload_current_scene()
