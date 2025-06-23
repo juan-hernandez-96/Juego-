@@ -48,6 +48,7 @@ func oscilar():
 	var tween = create_tween()
 	tween.set_loops()
 
-	# Movimiento de arriba a abajo y regreso (eje Y)
-	tween.tween_property(self, "position:y", posicion_inicial.y + desplazamiento, duracion)
-	tween.tween_property(self, "position:y", posicion_inicial.y - desplazamiento, duracion)
+	# Movimiento de izquierda a derecha y regreso
+	tween.tween_property(self, "position:x", posicion_inicial.x + desplazamiento, duracion)
+	tween.tween_property(self, "position:x", posicion_inicial.x - desplazamiento, duracion)
+	
