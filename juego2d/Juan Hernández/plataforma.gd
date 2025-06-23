@@ -22,26 +22,31 @@ func actualizar_plataforma():
 			$Sprite2D.modulate = Color. DARK_ORANGE
 		TipoPlataforma.CAIDA:
 			$Sprite2D.modulate = Color. DARK_ORANGE
+		
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("jugador"):
+	if body.is_in_group("character"):
 		
 		match type: 
 			
 			TipoPlataforma.FRAGIL:
-				await get_tree().create_timer(0.25).timeout
+				await get_tree().create_timer(0.1).timeout
 				queue_free()
 			TipoPlataforma.REBOTE:
 				if body.has_method("puede_rebotar"):
 					body.puede_rebotar(fuerza_rebote)
 				else: 
 					body.velocity.y = body.brinco * fuerza_rebote 
+			TipoPlataforma.CAIDA:
+				caida()
 	
+func caida():
+	position.y += 100
 	
 func oscilar():
 	var tween = create_tween()
-	tween.tween_property(self,"position:x",position.x + 100,2)
+	tween.tween_property(self,"position:x",position.x + 80,2)
 	tween.tween_property(self,"position:y",position.y - 100,2)
-	tween.tween_property(self,"position:x",position.x - 100,2)
+	tween.tween_property(self,"position:x",position.x - 80,2)
 	tween.tween_property(self,"position:y",position.y + 100,2)
 	tween.set_loops() 
