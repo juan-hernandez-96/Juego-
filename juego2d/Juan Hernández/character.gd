@@ -5,7 +5,7 @@ var brinco = -400
 var gravedad = 1000
 
 func _ready():
-	add_to_group("jugador")
+	add_to_group("character")
 
 func _physics_process(delta):
 	var direccion = Input.get_axis("ui_left","ui_right")
@@ -20,5 +20,6 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_reset_area_body_entered(body: Node2D) -> void:
-	get_tree().reload_current_scene()
+
+func _on_door_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://nivel1.tscn")

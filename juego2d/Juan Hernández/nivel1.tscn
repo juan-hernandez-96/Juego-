@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://2skqo7so7mml" path="res://Juan Hernández/door2.png" id="1_7ylcw"]
 [ext_resource type="PackedScene" uid="uid://yqwy00bfu6al" path="res://Juan Hernández/plataforma.tscn" id="2_ahnuy"]
-[ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Juan Hernández/personaje.tscn" id="3_clyua"]
+[ext_resource type="PackedScene" uid="uid://dtn7cukdryfn0" path="res://Juan Hernández/character.tscn" id="3_ahnuy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgipw"]
 size = Vector2(973, 210)
@@ -31,10 +31,11 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_7ylcw")
 
 [node name="Plataforma" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-121, 0)
 type = 1
 
 [node name="Plataforma2" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(-118, 3)
+position = Vector2(3, 2)
 
 [node name="Plataforma3" parent="." instance=ExtResource("2_ahnuy")]
 position = Vector2(393, 3)
@@ -48,5 +49,7 @@ type = 3
 position = Vector2(160, 2)
 type = 2
 
-[node name="personaje" parent="." instance=ExtResource("3_clyua")]
-position = Vector2(5, -48)
+[node name="Character" parent="." instance=ExtResource("3_ahnuy")]
+position = Vector2(0, -24)
+
+[connection signal="body_entered" from="ZonaMuerte" to="Plataforma" method="_on_zona_muerte_body_entered"]
