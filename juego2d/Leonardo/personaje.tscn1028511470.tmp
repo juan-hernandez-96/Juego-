@@ -1,36 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6e707k28mon7"]
 
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://c8w6nhv6a63sg" path="res://Juan Hernández/Character_030.png" id="1_4e5bt"]
-=======
 [ext_resource type="Texture2D" uid="uid://cjnuf244xo5jq" path="res://Leonardo/Character_030.png" id="1_qe3fk"]
 [ext_resource type="Script" uid="uid://b1rmaglanj2jf" path="res://Leonardo/personaje.gd" id="1_sbdgk"]
->>>>>>> 47d6a8fe2194d0b386acc36144205d6a12180226
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sbdgk"]
-size = Vector2(37, 48.25)
+size = Vector2(44, 54.5)
 
 [node name="personaje" type="CharacterBody2D"]
 script = ExtResource("1_sbdgk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-<<<<<<< HEAD
-top_level = true
-position = Vector2(-66, -5)
-shape = SubResource("CapsuleShape2D_ltgau")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-67, -7)
-texture = ExtResource("1_4e5bt")
-=======
-position = Vector2(-3.5, 1.875)
+position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_sbdgk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, -8)
-scale = Vector2(1.04861, 1.00694)
+position = Vector2(0, -7)
+scale = Vector2(1.18056, 1.20833)
 texture = ExtResource("1_qe3fk")
->>>>>>> 47d6a8fe2194d0b386acc36144205d6a12180226
 hframes = 4
 vframes = 4
 
