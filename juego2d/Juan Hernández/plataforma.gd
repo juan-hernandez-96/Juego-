@@ -30,7 +30,7 @@ func _on_body_entered(body: Node2D) -> void:
 		match type: 
 			
 			TipoPlataforma.FRAGIL:
-				await get_tree().create_timer(0.05).timeout
+				await get_tree().create_timer(0.1).timeout
 				queue_free()
 			TipoPlataforma.REBOTE:
 				if body.has_method("puede_rebotar"):

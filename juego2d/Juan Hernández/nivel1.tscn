@@ -92,7 +92,21 @@ position = Vector2(-1067, -537)
 type = 3
 
 [node name="Plataforma16" parent="." instance=ExtResource("2_ahnuy")]
-position = Vector2(-1438, -606)
+position = Vector2(-1401, -606)
+
+[node name="Plataforma17" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-1552, -569)
+type = 2
+
+[node name="Plataforma18" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-1693, -520)
+
+[node name="Plataforma19" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-1825, -466)
+
+[node name="Plataforma20" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(-2121, -462)
+type = 1
 
 [connection signal="body_entered" from="ZonaMuerte" to="Character" method="_on_zona_muerte_body_entered"]
 [connection signal="body_entered" from="Plataforma" to="Plataforma" method="_on_body_entered"]
@@ -111,3 +125,7 @@ position = Vector2(-1438, -606)
 [connection signal="body_entered" from="Plataforma14" to="Plataforma14" method="_on_body_entered"]
 [connection signal="body_entered" from="Plataforma15" to="Plataforma15" method="_on_body_entered"]
 [connection signal="body_entered" from="Plataforma16" to="Plataforma16" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma17" to="Plataforma17" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma18" to="Plataforma18" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma19" to="Plataforma19" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma20" to="Plataforma20" method="_on_body_entered"]
