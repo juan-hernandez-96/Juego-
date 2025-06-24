@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
 [ext_resource type="Script" uid="uid://b0g4wp148bly3" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
-[ext_resource type="PackedScene" uid="uid://b6e707k28mon7" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
+[ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="PackedScene" uid="uid://dggqqhbf17mak" path="res://Leonardo/plataforma.tscn" id="2_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
@@ -19,9 +19,6 @@ script = ExtResource("1_6bcpe")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zona de eliminacion"]
 position = Vector2(1012.25, 471)
 shape = SubResource("RectangleShape2D_1iyf2")
-
-[node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
-position = Vector2(330, -39)
 
 [node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
 position = Vector2(473, 54)
@@ -42,7 +39,7 @@ offset_bottom = 23.0
 position = Vector2(1283, -311)
 
 [node name="anillo4" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(1463, -139)
+position = Vector2(1421, -139)
 
 [node name="anillo5" parent="." instance=ExtResource("4_1iyf2")]
 position = Vector2(1523, -488)
@@ -61,9 +58,10 @@ type = 2
 [node name="plataforma4" parent="." instance=ExtResource("2_vx6k7")]
 position = Vector2(1190, 15)
 type = 1
+direccion = "horizontal"
 
 [node name="plataforma5" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(1335, -212)
+position = Vector2(1322, -195)
 type = 3
 
 [node name="plataforma6" parent="." instance=ExtResource("2_vx6k7")]
@@ -73,6 +71,10 @@ position = Vector2(618, 92)
 position = Vector2(948, 43)
 
 [node name="plataforma8" parent="." instance=ExtResource("2_vx6k7")]
-position = Vector2(1463, -20)
+position = Vector2(1417, -46)
+type = 1
+
+[node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
+position = Vector2(332, -33)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
