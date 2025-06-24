@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0gob4hs3xtg3"]
+[gd_scene load_steps=4 format=3 uid="uid://byys1ml5h0hwu"]
 
-[ext_resource type="Texture2D" uid="uid://cec54fgdyjqhl" path="res://Leonardo/vintagesonic1-sonic-ring-gif-11562880671bobd49rxah (1).png" id="1_mx5co"]
+[ext_resource type="Texture2D" uid="uid://cec54fgdyjqhl" path="res://Leonardo/vintagesonic1-sonic-ring-gif-11562880671bobd49rxah (1).png" id="1_fdtmf"]
 
 [sub_resource type="GDScript" id="GDScript_mx5co"]
 script/source = "extends Area2D
@@ -12,6 +12,10 @@ func _on_body_entered(body: Node) -> void:
 	print(\"Entró:\", body.name)
 	get_parent().sumar_anillo()
 	queue_free()
+
+
+func _on_timer_parpadeo_timeout() -> void:
+	visible = not visible
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jre6i"]
@@ -24,7 +28,7 @@ script = SubResource("GDScript_mx5co")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-2.40625, 21.0938)
 scale = Vector2(0.0197088, 0.0242477)
-texture = ExtResource("1_mx5co")
+texture = ExtResource("1_fdtmf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3, 22)

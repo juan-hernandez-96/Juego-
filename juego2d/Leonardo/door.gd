@@ -1,8 +1,13 @@
 extends Area2D
 
 func _ready():
-	body_entered.connect(_on_body_entered)
+	# Conectar señal correctamente
+	connect("body_entered", Callable(self, "_on_body_entered"))
 
 func _on_body_entered(body: Node) -> void:
-	if body.name == "Personaje":
-		get_tree().change_scene_to_file("res://Nivel2.tscn")      # poner aqui la ruta de mi compañero
+	print("Entró:", body.name)  # Para probar si funciona
+
+	if body.name == "Personaje":  # Cambia a lo que diga tu jugador
+		var hud = get_node("/root/NIVEL2/HUD")  # Cambia Nivel1 si es necesario
+		hud.get_node("LabelFinal").visible = true
+		hud.get_node("BotonReiniciar").visible = true
