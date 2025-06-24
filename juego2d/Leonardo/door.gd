@@ -4,7 +4,7 @@ func _ready():
 	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body):
-	if body.name == "Jugador":
+	if body.is_in_group("jugador"):
 		var ui = get_parent().get_node("UI")
 		if ui:
 			ui.get_node("Mensaje").text = "¡Fin del juego!"
