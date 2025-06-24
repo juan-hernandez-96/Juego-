@@ -4,16 +4,16 @@
 [ext_resource type="Script" uid="uid://b7njxqv4g6r6e" path="res://Leonardo/door.gd" id="1_nv0m8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v6xrn"]
-size = Vector2(51, 49.5)
+size = Vector2(85.5, 67.75)
 
 [node name="door" type="Area2D"]
 script = ExtResource("1_nv0m8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(243.5, -69.25)
-scale = Vector2(0.159375, 0.148438)
+position = Vector2(250.75, -69.375)
+scale = Vector2(0.232813, 0.208594)
 texture = ExtResource("1_27hau")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(242.5, -68.75)
+position = Vector2(255, -67.875)
 shape = SubResource("RectangleShape2D_v6xrn")

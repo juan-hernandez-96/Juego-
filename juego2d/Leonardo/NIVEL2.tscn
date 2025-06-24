@@ -46,17 +46,20 @@ script = ExtResource("5_c3thg")
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HUD"]
+[node name="ContenedorFinal" type="VBoxContainer" parent="HUD"]
+visible = false
 offset_right = 40.0
 offset_bottom = 40.0
+alignment = 1
 
-[node name="LabelFinal" type="Label" parent="HUD/VBoxContainer"]
+[node name="LabelFinal" type="Label" parent="HUD/ContenedorFinal"]
 visible = false
 layout_mode = 2
+theme_override_colors/font_color = Color(0.975819, 0.9435, 0.986675, 1)
 text = "\"¡Juego terminado!\""
 vertical_alignment = 1
 
-[node name="BotonReiniciar" type="Button" parent="HUD/VBoxContainer"]
+[node name="BotonReiniciar" type="Button" parent="HUD/ContenedorFinal"]
 visible = false
 layout_mode = 2
 text = "\"Reiniciar\""
@@ -94,6 +97,9 @@ position = Vector2(948, 43)
 position = Vector2(1417, -46)
 type = 1
 
+[node name="plataforma9" parent="." instance=ExtResource("2_vx6k7")]
+position = Vector2(1527, -338)
+
 [node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
 position = Vector2(332, -33)
 
@@ -101,3 +107,4 @@ position = Vector2(332, -33)
 position = Vector2(1527, -491)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
+[connection signal="pressed" from="HUD/ContenedorFinal/BotonReiniciar" to="HUD" method="_on_boton_reiniciar_pressed"]
