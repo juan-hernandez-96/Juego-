@@ -1,16 +1,16 @@
 [gd_scene load_steps=13 format=3 uid="uid://bmt2lv577o0it"]
 
-[ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
-[ext_resource type="Script" uid="uid://b0g4wp148bly3" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
+[ext_resource type="Script" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
+[ext_resource type="Script" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
 [ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="Texture2D" uid="uid://c641lfnd4msbk" path="res://Leonardo/cielo.jpg" id="2_r0n43"]
-[ext_resource type="PackedScene" uid="uid://dggqqhbf17mak" path="res://Leonardo/plataforma.tscn" id="2_vx6k7"]
+[ext_resource type="PackedScene" uid="uid://ce5pro7wg0ey2" path="res://Leonardo/plataforma.tscn" id="2_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
-[ext_resource type="Script" uid="uid://dne20bosquong" path="res://Leonardo/hud.gd" id="5_c3thg"]
-[ext_resource type="Script" uid="uid://fykfovfp2gbo" path="res://Leonardo/ui.gd" id="6_p4hhj"]
-[ext_resource type="PackedScene" uid="uid://byys1ml5h0hwu" path="res://Leonardo/anillo22.tscn" id="7_7txpm"]
-[ext_resource type="Script" uid="uid://6eraqwpgknfy" path="res://Leonardo/boton_reiniciar.gd" id="10_c017o"]
+[ext_resource type="Script" path="res://Leonardo/hud.gd" id="5_c3thg"]
+[ext_resource type="Script" path="res://Leonardo/ui.gd" id="6_p4hhj"]
+[ext_resource type="PackedScene" path="res://Leonardo/anillo22.tscn" id="7_7txpm"]
+[ext_resource type="Script" path="res://Leonardo/boton_reiniciar.gd" id="10_c017o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
 size = Vector2(2007.5, 357)

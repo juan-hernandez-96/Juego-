@@ -38,10 +38,9 @@ func _on_body_entered(body: Node2D) -> void:
 				else: 
 					body.velocity.y = body.brinco * fuerza_rebote 
 			TipoPlataforma.CAIDA:
-				caida()
+				var tween = create_tween()
+				tween.tween_property(self, "position:y", position.y + 200, 1.0)
 	
-func caida():
-	position.y += 100
 	
 func oscilar():
 	var tween = create_tween()

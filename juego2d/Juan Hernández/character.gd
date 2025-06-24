@@ -3,7 +3,7 @@ extends CharacterBody2D
 var velocidad = 200
 var brinco = -400
 var gravedad = 1000
-
+	
 func _ready():
 	add_to_group("character")
 
@@ -21,3 +21,6 @@ func _physics_process(delta):
 
 func _on_zona_muerte_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()
+
+func _on_puerta_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://Leonardo/NIVEL2.tscn")
