@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bmt2lv577o0it"]
+[gd_scene load_steps=13 format=3 uid="uid://bmt2lv577o0it"]
 
 [ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
 [ext_resource type="Script" uid="uid://b0g4wp148bly3" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
@@ -8,7 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
 [ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
 [ext_resource type="Script" uid="uid://dne20bosquong" path="res://Leonardo/hud.gd" id="5_c3thg"]
+[ext_resource type="Script" uid="uid://fykfovfp2gbo" path="res://Leonardo/ui.gd" id="6_p4hhj"]
 [ext_resource type="PackedScene" uid="uid://byys1ml5h0hwu" path="res://Leonardo/anillo22.tscn" id="7_7txpm"]
+[ext_resource type="Script" uid="uid://6eraqwpgknfy" path="res://Leonardo/boton_reiniciar.gd" id="10_c017o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
 size = Vector2(2007.5, 357)
@@ -39,30 +41,31 @@ position = Vector2(1083, -76)
 [node name="door" parent="." instance=ExtResource("3_vx6k7")]
 position = Vector2(1283, -311)
 
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("6_p4hhj")
+
+[node name="Mensaje" type="Label" parent="UI"]
+visible = false
+custom_minimum_size = Vector2(100, 50)
+offset_right = 40.0
+offset_bottom = 23.0
+text = "\"\""
+horizontal_alignment = 1
+structured_text_bidi_override_options = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[node name="BotonReiniciar" type="Button" parent="UI"]
+visible = false
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Reiniciar"
+script = ExtResource("10_c017o")
+
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("5_c3thg")
 
 [node name="Marcador" type="Label" parent="HUD"]
 offset_right = 40.0
 offset_bottom = 23.0
-
-[node name="ContenedorFinal" type="VBoxContainer" parent="HUD"]
-visible = false
-offset_right = 40.0
-offset_bottom = 40.0
-alignment = 1
-
-[node name="LabelFinal" type="Label" parent="HUD/ContenedorFinal"]
-visible = false
-layout_mode = 2
-theme_override_colors/font_color = Color(0.975819, 0.9435, 0.986675, 1)
-text = "\"¡Juego terminado!\""
-vertical_alignment = 1
-
-[node name="BotonReiniciar" type="Button" parent="HUD/ContenedorFinal"]
-visible = false
-layout_mode = 2
-text = "\"Reiniciar\""
 
 [node name="anillo4" parent="." instance=ExtResource("4_1iyf2")]
 position = Vector2(1421, -139)
@@ -107,4 +110,4 @@ position = Vector2(332, -33)
 position = Vector2(1527, -491)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
-[connection signal="pressed" from="HUD/ContenedorFinal/BotonReiniciar" to="HUD" method="_on_boton_reiniciar_pressed"]
+[connection signal="pressed" from="UI/BotonReiniciar" to="UI" method="_on_boton_reiniciar_pressed"]
