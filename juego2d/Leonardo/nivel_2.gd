@@ -11,3 +11,7 @@ func sumar_anillo():
 	if contador_anillos == 5:
 		print("¡Puerta desbloqueada!")
 		door.get_node("CollisionShape2D").disabled = true  # Solo desactiva la colisión
+
+
+func _on_plataforma_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

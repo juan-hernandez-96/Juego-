@@ -23,11 +23,11 @@ func actualizar_plataforma():
 			$Sprite2D.modulate = Color.DARK_ORANGE
 			oscilar()
 		TipoPlataforma.FRAGIL:
-			$Sprite2D.modulate = Color.AQUA
+			$Sprite2D.modulate = Color.NAVY_BLUE
 		TipoPlataforma.REBOTE:
-			$Sprite2D.modulate = Color.FOREST_GREEN
+			$Sprite2D.modulate = Color.YELLOW
 		TipoPlataforma.CAIDA:
-			$Sprite2D.modulate = Color.RED
+			$Sprite2D.modulate = Color.NAVY_BLUE
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("jugador"):

@@ -5,13 +5,17 @@
 [sub_resource type="GDScript" id="GDScript_mx5co"]
 script/source = "extends Area2D
 
-func _ready():
-	body_entered.connect(_on_body_entered)
+@export var game_manager_path : NodePath
+var game_manager
 
-func _on_body_entered(body: Node) -> void:
-	print(\"Entró:\", body.name)
-	get_parent().sumar_anillo()
-	queue_free()
+func _ready():
+	game_manager = get_node(game_manager_path)
+	connect(\"body_entered\", Callable(self, \"_on_body_entered\"))
+
+func _on_body_entered(body):
+	if body.is_in_group(\"jugador\"):
+		game_manager.sumar_anillo()
+		queue_free()
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jre6i"]
