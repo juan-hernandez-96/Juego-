@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
 [ext_resource type="Script" path="res://Leonardo/hud.gd" id="5_c3thg"]
 [ext_resource type="Script" path="res://Leonardo/ui.gd" id="6_p4hhj"]
-[ext_resource type="PackedScene" path="res://Leonardo/anillo22.tscn" id="7_7txpm"]
+[ext_resource type="PackedScene" uid="uid://byys1ml5h0hwu" path="res://Leonardo/anillo22.tscn" id="7_7txpm"]
 [ext_resource type="Script" path="res://Leonardo/boton_reiniciar.gd" id="10_c017o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]

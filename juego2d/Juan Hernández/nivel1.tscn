@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd7bvb2xyn3c3"]
+[gd_scene load_steps=9 format=3 uid="uid://bd7bvb2xyn3c3"]
 
 [ext_resource type="Script" uid="uid://c0mrmsij8eeas" path="res://Juan Hernández/nivel_1.gd" id="1_3tgsc"]
 [ext_resource type="Texture2D" uid="uid://2skqo7so7mml" path="res://Juan Hernández/door2.png" id="1_7ylcw"]
 [ext_resource type="Texture2D" uid="uid://c641lfnd4msbk" path="res://Leonardo/cielo.jpg" id="1_clyua"]
 [ext_resource type="PackedScene" uid="uid://yqwy00bfu6al" path="res://Juan Hernández/plataforma.tscn" id="2_ahnuy"]
 [ext_resource type="PackedScene" uid="uid://dtn7cukdryfn0" path="res://Juan Hernández/character.tscn" id="3_ahnuy"]
+[ext_resource type="PackedScene" uid="uid://ds0yesflrde2y" path="res://Juan Hernández/ring.tscn" id="6_kaara"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgipw"]
 size = Vector2(6409, 423)
@@ -44,7 +45,7 @@ text = "."
 position = Vector2(1, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMuerte"]
-position = Vector2(-223.5, 576.5)
+position = Vector2(-222, 412)
 shape = SubResource("RectangleShape2D_kgipw")
 
 [node name="Puerta" type="Area2D" parent="."]
@@ -135,8 +136,14 @@ position = Vector2(-1825, -466)
 position = Vector2(-2121, -462)
 type = 1
 
+[node name="Plataforma21" parent="." instance=ExtResource("2_ahnuy")]
+position = Vector2(442, 17)
+type = 4
+
+[node name="Ring" parent="." instance=ExtResource("6_kaara")]
+position = Vector2(438, -5)
+
 [connection signal="body_entered" from="ZonaMuerte" to="Character" method="_on_zona_muerte_body_entered"]
-[connection signal="body_entered" from="Puerta" to="Character" method="_on_puerta_body_entered"]
 [connection signal="body_entered" from="Plataforma" to="Plataforma" method="_on_body_entered"]
 [connection signal="body_entered" from="Plataforma2" to="Plataforma2" method="_on_body_entered"]
 [connection signal="body_entered" from="Plataforma3" to="Plataforma3" method="_on_body_entered"]
@@ -157,3 +164,4 @@ type = 1
 [connection signal="body_entered" from="Plataforma18" to="Plataforma18" method="_on_body_entered"]
 [connection signal="body_entered" from="Plataforma19" to="Plataforma19" method="_on_body_entered"]
 [connection signal="body_entered" from="Plataforma20" to="Plataforma20" method="_on_body_entered"]
+[connection signal="body_entered" from="Plataforma21" to="Plataforma21" method="_on_body_entered"]
