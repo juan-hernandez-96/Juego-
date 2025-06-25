@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8w6nhv6a63sg"
-path="res://.godot/imported/Character_030.png-287c56788fe8a73608eaab0907e55f11.ctex"
+uid="uid://e7m5kasvn87p"
+path="res://.godot/imported/Platform.png-78fef8e090676934c7229972ab603a29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Juan Hernández/Character_030.png"
-dest_files=["res://.godot/imported/Character_030.png-287c56788fe8a73608eaab0907e55f11.ctex"]
+source_file="res://Juan Hernández/misc/Platform.png"
+dest_files=["res://.godot/imported/Platform.png-78fef8e090676934c7229972ab603a29.ctex"]
 
 [params]
 

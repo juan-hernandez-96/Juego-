@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://yqwy00bfu6al"]
+[gd_scene load_steps=6 format=3 uid="uid://yqwy00bfu6al"]
 
 [ext_resource type="Script" uid="uid://cb16ehc6r6lrp" path="res://Juan Hernández/plataforma.gd" id="1_40ad4"]
-[ext_resource type="Texture2D" uid="uid://e7m5kasvn87p" path="res://Juan Hernández/Platform.png" id="1_bisx2"]
+[ext_resource type="Texture2D" uid="uid://e7m5kasvn87p" path="res://Juan Hernández/misc/Platform.png" id="1_bisx2"]
+[ext_resource type="AudioStream" uid="uid://d0t8ujay003bx" path="res://Juan Hernández/misc/sonic-spring.mp3" id="3_fw8hw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bisx2"]
 size = Vector2(42, 16)
@@ -27,3 +28,7 @@ shape = SubResource("RectangleShape2D_bisx2")
 position = Vector2(-4, 2)
 shape = SubResource("RectangleShape2D_40ad4")
 debug_color = Color(0.868045, 0.81681, 0.0108379, 0.42)
+
+[node name="jump_from" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_fw8hw")
+volume_db = -21.55

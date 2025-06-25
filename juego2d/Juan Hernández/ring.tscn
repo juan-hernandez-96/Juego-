@@ -1,8 +1,23 @@
 [gd_scene load_steps=8 format=3 uid="uid://ds0yesflrde2y"]
 
-[ext_resource type="Texture2D" uid="uid://cbhwoh7l5ro1q" path="res://Juan Hernández/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png" id="1_yuokw"]
+[ext_resource type="Texture2D" uid="uid://cbhwoh7l5ro1q" path="res://Juan Hernández/misc/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png" id="1_yuokw"]
 [ext_resource type="Script" uid="uid://bbr043wbcwuey" path="res://ring.gd" id="2_coca1"]
-[ext_resource type="AudioStream" uid="uid://dmatfsurwc38p" path="res://Juan Hernández/26f8b9_sonic_ring_sound_effect.mp3" id="3_coca1"]
+[ext_resource type="AudioStream" uid="uid://dmatfsurwc38p" path="res://Juan Hernández/misc/26f8b9_sonic_ring_sound_effect.mp3" id="3_coca1"]
+
+[sub_resource type="Animation" id="Animation_2gnx4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_4gxsa"]
 resource_name = "circle"
@@ -19,21 +34,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 4, 8, 10, 12, 14, 15, 17, 18, 20, 22, 24, 26, 29]
-}
-
-[sub_resource type="Animation" id="Animation_2gnx4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r57ho"]
@@ -66,3 +66,5 @@ volume_db = -16.023
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_coca1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

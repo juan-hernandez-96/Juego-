@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbhwoh7l5ro1q"
-path="res://.godot/imported/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png-e1fac68d1d7eee923641159825194c26.ctex"
+uid="uid://c510hqpmwmykp"
+path="res://.godot/imported/FDHsu.png-26db9777b5c52a631301b4d9924fb0f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Juan Hernández/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png"
-dest_files=["res://.godot/imported/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png-e1fac68d1d7eee923641159825194c26.ctex"]
+source_file="res://Juan Hernández/misc/FDHsu.png"
+dest_files=["res://.godot/imported/FDHsu.png-26db9777b5c52a631301b4d9924fb0f8.ctex"]
 
 [params]
 
