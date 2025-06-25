@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8w6nhv6a63sg"
-path="res://.godot/imported/Character_030.png-287c56788fe8a73608eaab0907e55f11.ctex"
+uid="uid://c510hqpmwmykp"
+path="res://.godot/imported/FDHsu.png-26db9777b5c52a631301b4d9924fb0f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Juan Hernández/Character_030.png"
-dest_files=["res://.godot/imported/Character_030.png-287c56788fe8a73608eaab0907e55f11.ctex"]
+source_file="res://Juan Hernández/misc/FDHsu.png"
+dest_files=["res://.godot/imported/FDHsu.png-26db9777b5c52a631301b4d9924fb0f8.ctex"]
 
 [params]
 

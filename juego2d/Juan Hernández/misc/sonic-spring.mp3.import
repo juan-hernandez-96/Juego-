@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0t8ujay003bx"
+path="res://.godot/imported/sonic-spring.mp3-b8b07491ac19c05217915d00e0381120.mp3str"
+
+[deps]
+
+source_file="res://Juan Hernández/misc/sonic-spring.mp3"
+dest_files=["res://.godot/imported/sonic-spring.mp3-b8b07491ac19c05217915d00e0381120.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
