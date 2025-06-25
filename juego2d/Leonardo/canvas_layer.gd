@@ -11,7 +11,7 @@ func _ready():
 func mostrar_fin_juego():
 	label_fin.visible = true
 	boton_reiniciar.visible = true
-	get_tree().paused = true  # pausa el juego
+	get_tree().paused = true  
 
 func _on_BotonReiniciar_pressed():
 	get_tree().paused = false

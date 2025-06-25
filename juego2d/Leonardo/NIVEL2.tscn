@@ -1,25 +1,24 @@
 [gd_scene load_steps=11 format=3 uid="uid://bmt2lv577o0it"]
 
-
+[ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
+[ext_resource type="Script" uid="uid://b0g4wp148bly3" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
+[ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
+[ext_resource type="Texture2D" uid="uid://c641lfnd4msbk" path="res://Leonardo/cielo.jpg" id="2_r0n43"]
+[ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
+[ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
 [ext_resource type="Script" uid="uid://cljcns6j2i7pi" path="res://Leonardo/game_manager.gd" id="9_c017o"]
 [ext_resource type="Script" uid="uid://dkjnwpnsphtfu" path="res://Leonardo/canvas_layer.gd" id="10_p4hhj"]
 [ext_resource type="PackedScene" uid="uid://dieev2wdv1ol7" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
-
-[ext_resource type="Script" path="res://Leonardo/hud.gd" id="5_c3thg"]
-[ext_resource type="Script" path="res://Leonardo/ui.gd" id="6_p4hhj"]
-[ext_resource type="PackedScene" uid="uid://byys1ml5h0hwu" path="res://Leonardo/anillo22.tscn" id="7_7txpm"]
-[ext_resource type="Script" path="res://Leonardo/boton_reiniciar.gd" id="10_c017o"]
->>>>>>> fd097e63eb9d5a5022644494129521e690242ae2
-
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
 size = Vector2(2007.5, 357)
 
 [node name="NIVEL2" type="Node2D"]
 script = ExtResource("1_dkh2j")
+metadata/_edit_horizontal_guides_ = [-411.0]
 
 [node name="fondo" type="Sprite2D" parent="."]
-position = Vector2(91, 74)
+position = Vector2(570, 93)
 scale = Vector2(2, 2)
 texture = ExtResource("2_r0n43")
 
@@ -95,7 +94,7 @@ position = Vector2(1362, -181)
 game_manager_path = NodePath("../GameManager")
 
 [node name="anillo5" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(1505, -457)
+position = Vector2(1499, -452)
 game_manager_path = NodePath("../GameManager")
 
 [node name="Plataforma1" parent="." instance=ExtResource("11_p4hhj")]
@@ -129,6 +128,6 @@ direccion = "horizontal"
 position = Vector2(959, -7)
 
 [node name="Plataforma8" parent="." instance=ExtResource("11_p4hhj")]
-position = Vector2(1501, -309)
+position = Vector2(1501, -304)
 
 [connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
