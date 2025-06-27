@@ -8,17 +8,17 @@ var puerta_desbloqueada : bool = false
 var hud
 
 func _ready():
-	hud = get_node(hud_path)
-	actualizar_hud()
+    hud = get_node(hud_path)
+    actualizar_hud()
 
 func sumar_anillo():
-	anillos_recolectados += 1
-	print("Anillos:", anillos_recolectados)
-	actualizar_hud()
-	if anillos_recolectados >= anillos_para_desbloquear:
-		puerta_desbloqueada = true
-		print("Puerta desbloqueada!")
+    anillos_recolectados += 1
+    print("Anillos:", anillos_recolectados)
+    actualizar_hud()
+    if anillos_recolectados >= anillos_para_desbloquear:
+        puerta_desbloqueada = true
+        print("Puerta desbloqueada!")
 
 func actualizar_hud():
-	if hud:
-		hud.actualizar_marcador(anillos_recolectados)
+    if hud:
+        hud.actualizar_marcador(anillos_recolectados)

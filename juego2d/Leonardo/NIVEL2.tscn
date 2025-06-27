@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://bmt2lv577o0it"]
+[gd_scene load_steps=10 format=3 uid="uid://bmt2lv577o0it"]
 
-[ext_resource type="Script" uid="uid://bhvjtn2ywyaq1" path="res://Leonardo/zona_de_eliminacion.gd" id="1_6bcpe"]
 [ext_resource type="Script" uid="uid://b0g4wp148bly3" path="res://Leonardo/nivel_2.gd" id="1_dkh2j"]
 [ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="Texture2D" uid="uid://c641lfnd4msbk" path="res://Leonardo/cielo.jpg" id="2_r0n43"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
-[ext_resource type="PackedScene" uid="uid://b0gob4hs3xtg3" path="res://Leonardo/anillo.tscn" id="4_1iyf2"]
+[ext_resource type="PackedScene" uid="uid://be4hx7k7yh54o" path="res://Leonardo/ring11.tscn" id="4_c3thg"]
 [ext_resource type="Script" uid="uid://cljcns6j2i7pi" path="res://Leonardo/game_manager.gd" id="9_c017o"]
 [ext_resource type="Script" uid="uid://dkjnwpnsphtfu" path="res://Leonardo/canvas_layer.gd" id="10_p4hhj"]
 [ext_resource type="PackedScene" uid="uid://dieev2wdv1ol7" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
@@ -18,28 +17,30 @@ script = ExtResource("1_dkh2j")
 metadata/_edit_horizontal_guides_ = [-411.0]
 
 [node name="fondo" type="Sprite2D" parent="."]
-position = Vector2(570, 93)
-scale = Vector2(2, 2)
+position = Vector2(570, 435.5)
+scale = Vector2(2, 2.77401)
 texture = ExtResource("2_r0n43")
 
-[node name="zona de eliminacion" type="Area2D" parent="."]
-script = ExtResource("1_6bcpe")
+[node name="ZonaMuerte" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="zona de eliminacion"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMuerte"]
 position = Vector2(1006, 468)
 shape = SubResource("RectangleShape2D_1iyf2")
 
-[node name="anillo" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(457, 35)
-game_manager_path = NodePath("../GameManager")
+[node name="Ring" parent="." instance=ExtResource("4_c3thg")]
+position = Vector2(1383, -119)
 
-[node name="anillo2" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(717, -49)
-game_manager_path = NodePath("../GameManager")
+[node name="Ring2" parent="." instance=ExtResource("4_c3thg")]
+position = Vector2(453, 45)
 
-[node name="anillo3" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(971, -117)
-game_manager_path = NodePath("../GameManager")
+[node name="Ring3" parent="." instance=ExtResource("4_c3thg")]
+position = Vector2(701, -31)
+
+[node name="Ring4" parent="." instance=ExtResource("4_c3thg")]
+position = Vector2(1073, -94)
+
+[node name="Ring5" parent="." instance=ExtResource("4_c3thg")]
+position = Vector2(1502, -428)
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("9_c017o")
@@ -77,10 +78,6 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "\"Reiniciar nivel\""
 
-[node name="LabelMarcador" type="Label" parent="HUD"]
-offset_right = 40.0
-offset_bottom = 23.0
-
 [node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
 position = Vector2(332, -33)
 
@@ -88,14 +85,6 @@ position = Vector2(332, -33)
 position = Vector2(1245, -278)
 game_manager_path = NodePath("../GameManager")
 hud_path = NodePath("../HUD")
-
-[node name="anillo4" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(1362, -181)
-game_manager_path = NodePath("../GameManager")
-
-[node name="anillo5" parent="." instance=ExtResource("4_1iyf2")]
-position = Vector2(1499, -452)
-game_manager_path = NodePath("../GameManager")
 
 [node name="Plataforma1" parent="." instance=ExtResource("11_p4hhj")]
 position = Vector2(337, 5)
@@ -130,4 +119,4 @@ position = Vector2(959, -7)
 [node name="Plataforma8" parent="." instance=ExtResource("11_p4hhj")]
 position = Vector2(1501, -304)
 
-[connection signal="body_entered" from="zona de eliminacion" to="zona de eliminacion" method="_on_body_entered"]
+[connection signal="body_entered" from="ZonaMuerte" to="personaje" method="_on_zona_muerte_body_entered"]
