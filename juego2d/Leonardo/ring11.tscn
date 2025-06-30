@@ -48,6 +48,7 @@ radius = 5.09902
 [node name="Ring11" type="Area2D"]
 texture_filter = 1
 script = ExtResource("1_xttca")
+game_manager_path = NodePath("GameManager")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.179688, 0.179688)
@@ -66,4 +67,9 @@ stream = ExtResource("3_x6mre")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_coca1")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

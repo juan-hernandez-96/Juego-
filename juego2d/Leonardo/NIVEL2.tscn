@@ -29,21 +29,27 @@ shape = SubResource("RectangleShape2D_1iyf2")
 
 [node name="Ring" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(1383, -119)
+game_manager_path = NodePath("../GameManager")
 
 [node name="Ring2" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(453, 45)
+game_manager_path = NodePath("../GameManager")
 
 [node name="Ring3" parent="." instance=ExtResource("4_c3thg")]
-position = Vector2(701, -31)
+position = Vector2(706, -47)
+game_manager_path = NodePath("../GameManager")
 
 [node name="Ring4" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(1073, -94)
+game_manager_path = NodePath("../GameManager")
 
 [node name="Ring5" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(1502, -428)
+game_manager_path = NodePath("../GameManager")
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("9_c017o")
+hud_path = NodePath("../HUD")
 
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("10_p4hhj")
@@ -64,6 +70,7 @@ theme_override_font_sizes/font_size = 30
 text = "\"Fin del juego\""
 
 [node name="BotonReiniciar" type="Button" parent="HUD"]
+process_mode = 3
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -77,6 +84,11 @@ offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "\"Reiniciar nivel\""
+
+[node name="LabelMarcador" type="Label" parent="HUD"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "\"Anillos: 0\""
 
 [node name="personaje" parent="." instance=ExtResource("2_4u8h7")]
 position = Vector2(332, -33)
