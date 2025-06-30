@@ -15,7 +15,7 @@ func mostrar_fin_juego():
 
 func _on_BotonReiniciar_pressed():
     get_tree().paused = false
-    get_tree().change_scene("res://Niveles/Nivel1.tscn")  # Cambia esta ruta
+    get_tree().change_scene_to_file("res://Juan Hernández/nivel1.tscn")
 
 func actualizar_marcador(cantidad):
     label_marcador.text = "Anillos: " + str(cantidad)

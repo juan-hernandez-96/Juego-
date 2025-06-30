@@ -88,6 +88,8 @@ text = "\"Reiniciar nivel\""
 [node name="LabelMarcador" type="Label" parent="HUD"]
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.309804, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
 text = "\"Anillos: 0\""
 
 [node name="personaje" parent="." instance=ExtResource("2_4u8h7")]

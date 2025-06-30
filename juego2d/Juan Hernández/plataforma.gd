@@ -17,7 +17,7 @@ func actualizar_plataforma():
             $Sprite2D.modulate = Color. DIM_GRAY
         TipoPlataforma.OSCILATORIA:
             $Sprite2D.modulate = Color.REBECCA_PURPLE
-            iniciar_oscilar()
+            oscilar()
         TipoPlataforma.FRAGIL:
             $Sprite2D.modulate = Color. GHOST_WHITE
         TipoPlataforma.REBOTE:
