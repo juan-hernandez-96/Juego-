@@ -24,7 +24,7 @@ vframes = 3
 frame = 3
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_33p66")

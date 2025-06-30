@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dieev2wdv1ol7" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
-size = Vector2(2007.5, 357)
+size = Vector2(2300.75, 357)
 
 [node name="NIVEL2" type="Node2D"]
 script = ExtResource("1_dkh2j")
@@ -24,7 +24,7 @@ texture = ExtResource("2_r0n43")
 [node name="ZonaMuerte" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMuerte"]
-position = Vector2(1006, 468)
+position = Vector2(1152.63, 468)
 shape = SubResource("RectangleShape2D_1iyf2")
 
 [node name="Ring" parent="." instance=ExtResource("4_c3thg")]
