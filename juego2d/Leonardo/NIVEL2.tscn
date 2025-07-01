@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="Texture2D" uid="uid://c641lfnd4msbk" path="res://Leonardo/cielo.jpg" id="2_r0n43"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
-[ext_resource type="PackedScene" uid="uid://be4hx7k7yh54o" path="res://Leonardo/ring11.tscn" id="4_c3thg"]
-[ext_resource type="Script" uid="uid://cljcns6j2i7pi" path="res://Leonardo/game_manager.gd" id="9_c017o"]
-[ext_resource type="Script" uid="uid://dkjnwpnsphtfu" path="res://Leonardo/canvas_layer.gd" id="10_p4hhj"]
-[ext_resource type="PackedScene" uid="uid://dieev2wdv1ol7" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
+[ext_resource type="PackedScene" path="res://Leonardo/ring11.tscn" id="4_c3thg"]
+[ext_resource type="Script" path="res://Leonardo/game_manager.gd" id="9_c017o"]
+[ext_resource type="Script" path="res://Leonardo/canvas_layer.gd" id="10_p4hhj"]
+[ext_resource type="PackedScene" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
 size = Vector2(2300.75, 357)
@@ -29,23 +29,18 @@ shape = SubResource("RectangleShape2D_1iyf2")
 
 [node name="Ring" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(1383, -119)
-game_manager_path = NodePath("../GameManager")
 
 [node name="Ring2" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(453, 45)
-game_manager_path = NodePath("../GameManager")
 
 [node name="Ring3" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(706, -47)
-game_manager_path = NodePath("../GameManager")
 
 [node name="Ring4" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(1073, -94)
-game_manager_path = NodePath("../GameManager")
 
 [node name="Ring5" parent="." instance=ExtResource("4_c3thg")]
 position = Vector2(1502, -428)
-game_manager_path = NodePath("../GameManager")
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("9_c017o")
