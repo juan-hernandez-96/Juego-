@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://crenoqdghvttr"]
+[gd_scene load_steps=6 format=3 uid="uid://crenoqdghvttr"]
 
 [ext_resource type="Texture2D" uid="uid://c8w6nhv6a63sg" path="res://Juan Hernández/misc/Character_030.png" id="1_4e5bt"]
-[ext_resource type="Script" path="res://Leonardo/personaje.gd" id="1_sbdgk"]
+[ext_resource type="Script" uid="uid://b1rmaglanj2jf" path="res://Leonardo/personaje.gd" id="1_sbdgk"]
+[ext_resource type="AudioStream" uid="uid://cmb6sqsf20f2h" path="res://Leonardo/sonidospring.mp3" id="3_33p66"]
+[ext_resource type="AudioStream" uid="uid://6pmfl1oklsmg" path="res://Leonardo/sonidodemuerte.mp3" id="4_6poi5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qe3fk"]
 size = Vector2(31, 45)
@@ -22,4 +24,10 @@ vframes = 3
 frame = 3
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
+
+[node name="jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_33p66")
+
+[node name="Death_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6poi5")

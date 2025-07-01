@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ds0yesflrde2y"]
+[gd_scene load_steps=8 format=3 uid="uid://be4hx7k7yh54o"]
 
-[ext_resource type="Texture2D" uid="uid://cbhwoh7l5ro1q" path="res://Juan Hernández/misc/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png" id="1_yuokw"]
-[ext_resource type="Script" uid="uid://bbr043wbcwuey" path="res://Leonardo/ring.gd" id="2_coca1"]
-[ext_resource type="AudioStream" uid="uid://dmatfsurwc38p" path="res://Juan Hernández/misc/26f8b9_sonic_ring_sound_effect.mp3" id="3_coca1"]
+[ext_resource type="Script" uid="uid://bbr043wbcwuey" path="res://Leonardo/ring.gd" id="1_xttca"]
+[ext_resource type="Texture2D" uid="uid://cbhwoh7l5ro1q" path="res://Juan Hernández/misc/d91qfhx-8d6b825c-c0b5-4325-96fb-a05671ece9e8.png" id="2_frohg"]
+[ext_resource type="AudioStream" uid="uid://ddecoaf10756r" path="res://Leonardo/sonidodeanillo.mp3" id="3_x6mre"]
 
 [sub_resource type="Animation" id="Animation_2gnx4"]
 length = 0.001
@@ -45,13 +45,14 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_coca1"]
 radius = 5.09902
 
-[node name="Ring" type="Area2D"]
+[node name="Ring11" type="Area2D"]
 texture_filter = 1
-script = ExtResource("2_coca1")
+script = ExtResource("1_xttca")
+game_manager_path = NodePath("GameManager")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.179688, 0.179688)
-texture = ExtResource("1_yuokw")
+texture = ExtResource("2_frohg")
 hframes = 8
 vframes = 4
 
@@ -61,10 +62,14 @@ libraries = {
 }
 
 [node name="ring_sfx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_coca1")
-volume_db = -16.023
+stream = ExtResource("3_x6mre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_coca1")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
