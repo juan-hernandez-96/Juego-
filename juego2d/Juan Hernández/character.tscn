@@ -34,4 +34,4 @@ volume_db = -17.902
 
 [node name="Death_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_463dg")
-volume_db = -25.298
+volume_db = -9.37

@@ -18,7 +18,7 @@ size = Vector2(34, 35)
 script = ExtResource("1_3tgsc")
 
 [node name="Cielo" type="Sprite2D" parent="."]
-position = Vector2(-348.125, 291.375)
+position = Vector2(53.0001, 273)
 scale = Vector2(4.3043, 5.77768)
 texture = ExtResource("1_clyua")
 
