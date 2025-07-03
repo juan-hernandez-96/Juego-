@@ -4,7 +4,7 @@
 - Juan Pablo Hernández Arciniega.
 - Leonardo Rubén Hernández Silva.
 
-*Descripción del juego*/n
+*Descripción del juego*\n
 
    -Plataformero 2D, intencionado a tener un leve nivle de dificultad gracias a los diferentes tipos de plataformas usadas.
 
