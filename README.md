@@ -14,3 +14,5 @@
 **Descripcion de recursos usados**
 
 ****SPRITES****
+
+- Personaje principal
