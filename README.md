@@ -6,3 +6,9 @@
 
 *Descripción del juego*
    
+
+
+
+
+
+*Descripcion de Recursos*
