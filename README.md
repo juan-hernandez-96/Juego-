@@ -11,4 +11,4 @@
 
 
 
-*Descripcion de Recursos*
+*Descripcion de recursos usados*
