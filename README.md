@@ -1,2 +1,7 @@
-# Juego-
-Repositorio para trabajar el plataformero 2D de la clase Programación Estructurada.
+# Juego2D-
+
+# Integrantes-. 
+- Juan Pablo Hernández Arciniega.
+- Leonardo Rubén Hernández Silva.
+
+
