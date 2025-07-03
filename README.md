@@ -12,3 +12,4 @@
 
 
 **Descripcion de recursos usados**
+-sprites
