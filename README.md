@@ -1,4 +1,4 @@
-**Juego2D-**
+**-Juego2D-**
 
 **Integrantes-.** 
 - Juan Pablo Hernández Arciniega.
