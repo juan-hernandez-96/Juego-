@@ -13,4 +13,4 @@
 
 **Descripcion de recursos usados**
 
-****- SPRITES.****
+****SPRITES****
