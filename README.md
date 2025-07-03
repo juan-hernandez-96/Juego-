@@ -1,7 +1,8 @@
-# Juego2D-
+**Juego2D-**
 
-# Integrantes-. 
+**Integrantes-.** 
 - Juan Pablo Hernández Arciniega.
 - Leonardo Rubén Hernández Silva.
 
-
+*Descripción del juego*
+   
