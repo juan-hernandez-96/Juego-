@@ -16,4 +16,5 @@
 ****SPRITES****
 
 - Personaje principal
-- dvvfv
+- Plataformas
+- Anillos
