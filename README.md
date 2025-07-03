@@ -12,10 +12,18 @@
 
 
 
-*Descripcion de recursos usados*
+**Descripcion de recursos usados**
 
-****SPRITES****
+****SPRITES:****
 
 - Personaje principal
 - Plataformas
 - Anillos
+- Puerta
+- fondo para los dos niveles
+
+****SONIDOS:****
+
+- sonido a la hora de morir
+- sonido a la hora de saltar
+- sonido al recoger los anillos
