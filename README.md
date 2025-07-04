@@ -55,7 +55,7 @@
 - Se muestra un mensaje “fin del juego” al completar el nivel.
 
 
-
+**Descripción de cada escena (nivel, plataforma, personaje, etc y una imagen referente)**
 
 
 
@@ -287,3 +287,43 @@ func _on_timer_timeout():
     queue_free()  # Elimina el anillo de la escena
 
 ```
+
+📁 Hud.gd
+
+```gdscript
+
+extends CanvasLayer  # Este nodo se usa para elementos de la interfaz gráfica (HUD), siempre visible en pantalla
+
+# Referencias a los nodos hijos del HUD, asignadas automáticamente cuando la escena está lista
+@onready var label_fin = $LabelFinJuego             # Etiqueta que muestra el texto "¡Fin del juego!"
+@onready var boton_reiniciar = $BotonReiniciar      # Botón para reiniciar el nivel
+@onready var label_marcador = $LabelMarcador        # Etiqueta que muestra la cantidad de anillos recolectados
+
+# Esta función se ejecuta una vez al iniciar la escena
+func _ready():
+    label_fin.visible = false                       # Oculta el mensaje de fin de juego al inicio
+    boton_reiniciar.visible = false                 # Oculta el botón de reinicio al inicio
+    boton_reiniciar.connect("pressed", Callable(self, "_on_BotonReiniciar_pressed"))  
+    # Conecta el botón de reinicio para ejecutar una función cuando se presiona
+
+# Esta función se llama cuando el jugador gana el juego (por ejemplo, al recolectar todos los anillos)
+func mostrar_fin_juego():
+    label_fin.visible = true                        # Muestra el mensaje de fin de juego
+    boton_reiniciar.visible = true                  # Muestra el botón de reinicio
+    get_tree().paused = true                        # Pausa el juego (todo se detiene)
+
+# Esta función se llama cuando se presiona el botón de reinicio
+func _on_BotonReiniciar_pressed():
+    get_tree().paused = false                       # Quita la pausa del juego
+    get_tree().change_scene_to_file("res://Juan Hernández/nivel1.tscn")  
+    # Cambia la escena actual y carga de nuevo el nivel 1
+
+# Esta función actualiza el marcador de anillos en pantalla
+func actualizar_marcador(cantidad):
+    label_marcador.text = "Anillos: " + str(cantidad)  
+    # Muestra el número actual de anillos recolectados en el HUD
+
+
+```
+**Redactar de manera detallada por integrante, las dificultades que se tuvieron al usar las herramientas colaborativas**
+**Una breve conclusión del uso e importancia de las herramientas colaborativas para el programador**
