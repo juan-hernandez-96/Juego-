@@ -50,3 +50,6 @@
   
   [sonido de anillo.zip](https://github.com/user-attachments/files/21049179/sonido.de.anillo.zip)
 
+### 💫 Efectos:
+- Aparece un boton "reiniciar" para volver al nivel 1
+- Se muestra un mensaje “fin del juego” al completar el nivel.
