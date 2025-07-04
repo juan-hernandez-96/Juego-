@@ -20,6 +20,9 @@
   
   [personaje.zip](https://github.com/user-attachments/files/21049092/personaje.zip)
 - Plataformas
+  
+  [plataforma.zip](https://github.com/user-attachments/files/21049101/plataforma.zip)
+
 - Anillos
 - Puerta
 - fondo para los dos niveles
