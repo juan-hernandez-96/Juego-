@@ -1,6 +1,6 @@
 **#-Juego2D-**
 
-**Integrantes-.** 
+**👥Integrantes-.** 
 - Juan Pablo Hernández Arciniega.
 - Leonardo Rubén Hernández Silva.
 
