@@ -53,3 +53,13 @@
 ### 💫 Efectos:
 - Aparece un boton "reiniciar" para volver al nivel 1
 - Se muestra un mensaje “fin del juego” al completar el nivel.
+
+
+
+
+
+
+
+**Descripción de los códigos empleados para el funcionamiento**
+
+📁 GameManager.gd
