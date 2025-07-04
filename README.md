@@ -29,7 +29,7 @@
 
 - Puerta
   
-[puerta de fuego (1).zip](https://github.com/user-attachments/files/21049117/puerta.de.fuego.1.zip)
+  [puerta de fuego (1).zip](https://github.com/user-attachments/files/21049117/puerta.de.fuego.1.zip)
 
 - fondo para los dos niveles
   
