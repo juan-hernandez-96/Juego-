@@ -202,3 +202,51 @@ func oscilar():
             .set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
         tween.tween_property(self, "position:x", posicion_inicial.x - desplazamiento, duracion)\
             .set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+```
+
+📁 puerta.gd
+
+
+```gdscript
+
+extends Area2D  # Nodo que detecta colisiones cuando el jugador entra al área de la puerta
+
+# Ruta exportable para obtener el nodo GameManager (para verificar progreso del jugador)
+@export var game_manager_path: NodePath
+
+# Ruta exportable para obtener el nodo HUD (para mostrar mensajes como "fin del juego")
+@export var hud_path: NodePath
+
+# Variables que almacenarán las referencias a los nodos una vez cargados
+var game_manager
+var hud
+
+# Se ejecuta una vez cuando la escena está lista
+func _ready():
+    # Obtiene el nodo GameManager usando la ruta especificada en el editor
+    game_manager = get_node(game_manager_path)
+    
+    # Obtiene el nodo HUD usando la ruta especificada en el editor
+    hud = get_node(hud_path)
+    
+    # Conecta la señal de colisión del área (cuando algo entra) con la función personalizada
+    connect("body_entered", Callable(self, "_on_body_entered"))
+
+# Función que se ejecuta automáticamente cuando otro nodo entra en el área de la puerta
+func _on_body_entered(body):
+    # Verifica si el cuerpo que entró pertenece al grupo "jugador"
+    if body.is_in_group("jugador"):
+        # Muestra en consola el estado de la puerta (útil para depuración)
+        print("puerta_desbloqueada =", game_manager.puerta_desbloqueada)
+        
+        # Si el jugador ha recolectado los anillos necesarios y la puerta está desbloqueada...
+        if game_manager.puerta_desbloqueada:
+            # Llama a la función del HUD para mostrar el mensaje de fin de juego
+            hud.mostrar_fin_juego()
+        else:
+            # Si aún no se desbloquea la puerta, muestra un mensaje en consola
+            print("Te faltan anillos para desbloquear la puerta")
+
+```
+
