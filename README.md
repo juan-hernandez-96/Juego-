@@ -39,5 +39,8 @@
 ****SONIDOS:****
 
 - sonido a la hora de morir
+  
+  [sonidodemuerte.zip](https://github.com/user-attachments/files/21049161/sonidodemuerte.zip)
+
 - sonido a la hora de saltar
 - sonido al recoger los anillos
