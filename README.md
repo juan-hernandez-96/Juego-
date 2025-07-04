@@ -14,7 +14,7 @@
 
 **Descripcion de recursos usados**
 
-****SPRITES:****
+### 🎨 Assets:
 
 - Personaje principal
   
