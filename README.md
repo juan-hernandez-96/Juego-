@@ -44,6 +44,8 @@
 
 - sonido a la hora de saltar
   
+  [sonidospring.zip](https://github.com/user-attachments/files/21049184/sonidospring.zip)
+
 - sonido al recoger los anillos
   
   [sonido de anillo.zip](https://github.com/user-attachments/files/21049179/sonido.de.anillo.zip)
