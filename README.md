@@ -24,6 +24,9 @@
   [plataforma.zip](https://github.com/user-attachments/files/21049101/plataforma.zip)
 
 - Anillos
+  
+  [anillo.zip](https://github.com/user-attachments/files/21049108/anillo.zip)
+
 - Puerta
 - fondo para los dos niveles
   
