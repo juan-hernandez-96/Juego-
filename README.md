@@ -250,3 +250,40 @@ func _on_body_entered(body):
 
 ```
 
+📁 Anillos.gd
+
+
+```gdscript
+
+extends Area2D  # Nodo que detecta colisiones (representa el anillo en el juego)
+
+# Ruta al GameManager que lleva el conteo de anillos
+@export var game_manager_path: NodePath
+
+# Reproduce el sonido cuando el jugador recolecta el anillo
+@onready var ring_sfx: AudioStreamPlayer = $ring_sfx
+
+# Temporizador para eliminar el anillo tras una breve pausa (opcional)
+@onready var timer = $Timer
+
+# Variable para almacenar referencia al GameManager
+var game_manager
+
+# Se ejecuta cuando la escena inicia
+func _ready():
+    game_manager = get_node(game_manager_path)  # Conecta con el GameManager usando la ruta exportada
+    $Ring_Animation.play("circle")  # Reproduce animación del anillo (debe tener una animación llamada "circle")
+
+# Se ejecuta cuando otro cuerpo entra en contacto con el anillo
+func _on_body_entered(body: Node2D) -> void:
+    if body.is_in_group("jugador"):  # Solo reacciona si el que entra es el jugador
+        ring_sfx.play()  # Reproduce sonido del anillo
+        game_manager.sumar_anillo()  # Llama al GameManager para aumentar el contador
+        $CollisionShape2D.disabled = true  # Desactiva la colisión para evitar múltiples recogidas
+        timer.start()  # Inicia el temporizador que destruirá el anillo (si no se usa, puedes usar queue_free() directamente)
+
+# Se ejecuta cuando el temporizador llega a 0
+func _on_timer_timeout():
+    queue_free()  # Elimina el anillo de la escena
+
+```
