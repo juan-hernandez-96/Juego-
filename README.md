@@ -43,4 +43,8 @@
   [sonidodemuerte.zip](https://github.com/user-attachments/files/21049161/sonidodemuerte.zip)
 
 - sonido a la hora de saltar
+  
 - sonido al recoger los anillos
+  
+  [sonido de anillo.zip](https://github.com/user-attachments/files/21049179/sonido.de.anillo.zip)
+
