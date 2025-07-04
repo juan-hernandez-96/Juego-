@@ -36,7 +36,7 @@
   [fondo cielo.zip](https://github.com/user-attachments/files/21049050/fondo.cielo.zip)
 
 
-****SONIDOS:****
+### 🎵 Sonidos:
 
 - sonido a la hora de morir
   
