@@ -21,6 +21,9 @@
 - Anillos
 - Puerta
 - fondo para los dos niveles
+  
+[fondo cielo.zip](https://github.com/user-attachments/files/21049050/fondo.cielo.zip)
+
 
 ****SONIDOS:****
 
