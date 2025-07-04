@@ -326,4 +326,13 @@ func actualizar_marcador(cantidad):
 
 ```
 **Redactar de manera detallada por integrante, las dificultades que se tuvieron al usar las herramientas colaborativas**
+
+LEONARDO RUBEN HERNANDEZ SILVA
+
+ Las dificultades principales que tuve fue el manejo de git en VS Code y la sincronización con GitHub porque al inicio me costó entender cómo realizar correctamente las operaciones básicas desde VS Code como hacer commits y eso me provocó que algunas veces no subiera mis cambios a GitHub o sobrescribiera archivos sin querer o borraba cosas sin querer.
+
+
+
+
+
 **Una breve conclusión del uso e importancia de las herramientas colaborativas para el programador**
