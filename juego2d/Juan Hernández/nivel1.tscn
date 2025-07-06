@@ -63,7 +63,7 @@ texture = ExtResource("1_7ylcw")
 
 [node name="Plataforma" parent="." instance=ExtResource("2_ahnuy")]
 position = Vector2(155, 3)
-type = 2
+type = 3
 
 [node name="Plataforma2" parent="." instance=ExtResource("2_ahnuy")]
 position = Vector2(-778, -376)
@@ -175,9 +175,11 @@ type = 6
 
 [node name="Ring" parent="." instance=ExtResource("6_kaara")]
 position = Vector2(438, -3)
+script = null
 
 [node name="Ring2" parent="." instance=ExtResource("6_kaara")]
 position = Vector2(-2234, -515)
+script = null
 
 [node name="Plataforma29" parent="." instance=ExtResource("2_ahnuy")]
 position = Vector2(-1259, -537)

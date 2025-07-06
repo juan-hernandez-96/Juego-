@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://crenoqdghvttr" path="res://Leonardo/personaje.tscn" id="2_4u8h7"]
 [ext_resource type="Texture2D" uid="uid://c641lfnd4msbk" path="res://Leonardo/cielo.jpg" id="2_r0n43"]
 [ext_resource type="PackedScene" uid="uid://bglb2l5usasdg" path="res://Leonardo/door.tscn" id="3_vx6k7"]
-[ext_resource type="PackedScene" path="res://Leonardo/ring11.tscn" id="4_c3thg"]
+[ext_resource type="PackedScene" uid="uid://be4hx7k7yh54o" path="res://Leonardo/ring11.tscn" id="4_c3thg"]
 [ext_resource type="Script" path="res://Leonardo/game_manager.gd" id="9_c017o"]
 [ext_resource type="Script" path="res://Leonardo/canvas_layer.gd" id="10_p4hhj"]
-[ext_resource type="PackedScene" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
+[ext_resource type="PackedScene" uid="uid://dieev2wdv1ol7" path="res://Leonardo/plataforma1.tscn" id="11_p4hhj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iyf2"]
 size = Vector2(2300.75, 357)
