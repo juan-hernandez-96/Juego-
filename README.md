@@ -56,7 +56,7 @@
 - Se muestra un mensaje “fin del juego” al completar el nivel.
 
 
-**Descripción de cada escena (nivel, plataforma, personaje, etc y una imagen referente)**
+**Descripción de cada escena**
 
 
 *NIVEL 1*
@@ -64,39 +64,57 @@
 
 ![Captura de pantalla 2025-07-06 190611](https://github.com/user-attachments/assets/a4988bf3-7711-4da7-8e65-9863ea3f07a5)
 
+
 Dentro del primer nivel se muestra el mensaje que indica que para seguir al siguiente nivel se deben de recolectar 5 anillos esparcidos dentro del nivel.
 
 
 *NIVEL 2*
 
+
 ![Captura de pantalla 2025-07-06 191428](https://github.com/user-attachments/assets/87a21e4a-79e4-4521-8cca-6d384bbdb8c5)
+
 
 El objetivo del nivel 2 es el de conseguir 5 monedas de igual forma al nivel 1 para desbloquear la salida y dar fin al juego.
 
 
 *PERSONAJE*
 
+
 ![Captura de pantalla 2025-07-06 191730](https://github.com/user-attachments/assets/ab811ba8-c7ae-477c-9960-19223cf7410d)
+
 
 El codigo del personaje presenta la gran mayoria de las funciones establecidas para el juego, como lo son la recoleccion y acumulacion de anillos, así como pistas de sonido utilizadas.
 
+
+
 *PLATAFORMA*
+
 
 ![Captura de pantalla 2025-07-06 191920](https://github.com/user-attachments/assets/832cd84b-e0ef-47a6-93fc-7be20a97b417)
 
+
 Los diferentes tipos de plataformas usadas fueron: tipo fija, oscilatoria, de movimiento vertical y horizontal, de rebote, fragil, así como una de caida y variantes invisibles de las plataformas fijas, de rebote y fragil.
+
 
 *ANILLO*
 
+
 ![Captura de pantalla 2025-07-06 192122](https://github.com/user-attachments/assets/f6cf6aed-b3dd-4eb6-b6be-182f04b68fbc)
+
 
 Item acumulable usado para poder desbloquear las puertas de acceso y de salida. Cuenta con una pista de audio y animaciones para hacerlo más llamativo.
 
+
 *EXTRA: Scott Pilgrim*
+
 
 ![Captura de pantalla 2025-07-06 192318](https://github.com/user-attachments/assets/5cc3f369-5416-46e7-b866-d9a3c6c6bdb0)
 
+
 El personaje de Scott Pilgrim fue añadido como Easter Egg y para indicar el incio de un camino de plataformas invisibles.
+
+
+
 
 
 **Descripción de los códigos empleados para el funcionamiento**
