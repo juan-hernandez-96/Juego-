@@ -59,6 +59,20 @@
 **Descripción de cada escena (nivel, plataforma, personaje, etc y una imagen referente)**
 
 
+*NIVEL 1*
+
+
+![Captura de pantalla 2025-07-06 190611](https://github.com/user-attachments/assets/a4988bf3-7711-4da7-8e65-9863ea3f07a5)
+
+
+
+
+
+
+
+
+
+
 
 
 **Descripción de los códigos empleados para el funcionamiento**
@@ -328,9 +342,13 @@ func actualizar_marcador(cantidad):
 ```
 **Redactar de manera detallada por integrante, las dificultades que se tuvieron al usar las herramientas colaborativas**
 
-LEONARDO RUBEN HERNANDEZ SILVA
+*- LEONARDO RUBEN HERNANDEZ SILVA*
 
  Las dificultades principales que tuve fue el manejo de git en VS Code y la sincronización con GitHub porque al inicio me costó entender cómo realizar correctamente las operaciones básicas desde VS Code como hacer commits y eso me provocó que algunas veces no subiera mis cambios a GitHub o sobrescribiera archivos sin querer o borraba cosas sin querer.
+
+ *- JUAN PABLO HERNANDEZ ARCINIEGA*
+
+ 
 
 
 
