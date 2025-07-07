@@ -382,7 +382,7 @@ func actualizar_marcador(cantidad):
 
 
 ```
-**Redactar de manera detallada por integrante, las dificultades que se tuvieron al usar las herramientas colaborativas**
+**Dificultades al usar herramientas colaborativas**
 
 *- LEONARDO RUBEN HERNANDEZ SILVA*
 
@@ -390,10 +390,10 @@ func actualizar_marcador(cantidad):
 
  *- JUAN PABLO HERNANDEZ ARCINIEGA*
 
- 
+ Las dificultades que me provocaron dolores de cabeza fueron el comprender al 100% el buen manejo de los commits desde VSCode y como hacer que estos se reflejaran correctamente dentro del reposirotio de GitHub, además de el correcto uso de las señales usadas dentro del motor de Godot. 
 
 
+**Conclusión**
 
+Es una gracia divina el que herramientas como este tipo existan en la actualidad, hacen que el trabajo en equipo fluya de manera exponencial. Logran realizar avances en cuestion de minutos, avances que de no tener a disponibilidad las herramientas se tardarian hasta horas en realizar, y en un mundo que estan en constante movimiento, es muy importante mantener el flujo del trabajo lo mejor posible.
 
-
-**Una breve conclusión del uso e importancia de las herramientas colaborativas para el programador**
