@@ -64,10 +64,14 @@
 
 ![Captura de pantalla 2025-07-06 190611](https://github.com/user-attachments/assets/a4988bf3-7711-4da7-8e65-9863ea3f07a5)
 
+Dentro del primer nivel se muestra el mensaje que indica que para seguir al siguiente nivel se deben de recolectar 5 anillos esparcidos dentro del nivel.
 
 
+*NIVEL 2*
 
+![Captura de pantalla 2025-07-06 191428](https://github.com/user-attachments/assets/87a21e4a-79e4-4521-8cca-6d384bbdb8c5)
 
+El objetivo del nivel 2 es el de conseguir 5 monedas de igual forma al nivel 1 para desbloquear la salida y dar fin al juego.
 
 
 
