@@ -1,4 +1,4 @@
-**#-Juego2D-**
+**On the Luna**
 
 **👥Integrantes-.** 
 - Juan Pablo Hernández Arciniega.
@@ -6,7 +6,8 @@
 
 *Descripción del juego*  
 
-   -Plataformero 2D, intencionado a tener un leve nivle de dificultad gracias a los diferentes tipos de plataformas usadas.
+   -Plataformero 2D, intencionado a tener un leve nivel de dificultad gracias a los diferentes tipos de plataformas usadas y a su posicionamiento dentro de los niveles del juego. 
+   La mecanica principal del juego es recolectar anillos con la intención de alcanzar un número establecido de estas para poder desbloquear la entrada al siguiente nivel.
 
 
 
